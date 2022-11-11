@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodLipe</title>
+    <link rel="stylesheet" href="terror.css">
+    <link rel="shortcut icon" href="./assets/CODIFICADOR.png" type="image/x-icon">
+</head>
+<body> 
+   <div class="oi">
+            <header>
+                <a href="#"></a>
+                <h1>CodLipe</h1>
+
+        
+            </header>
+            <main>
+                <form action="" class="formulario">
+                    <div class="formcima">
+                        <div class="radio1">
+
+                            <div class="group-radio">
+                                <input id="cesar" type="radio" name="radiocifra" onclick="someCesar()" checked>
+                                <label for="cesar" class="cesar">Cifra Cesar</label>
+                            </div>
+                            <div class="group-radio">
+                                <input id="b64" type="radio" name="radiocifra" onclick="someCesar()">
+                                <label for="b64" class="b64">Base64</label>
+                            </div>
+                        </div>
+                        <div class="tamanho">
+                            <input type="number" class="cesarNumber" onblur="aceitaNumero()">
+                        </div>
+                    </div>
+                    <div class="formInputs">
+                        <textarea name=""  id="inputEntrada" class="inputs" maxlength="250" placeholder="escreva algo"></textarea>
+                        <div class="radio2">
+                            <div class="codecode">
+                                <input id="codifica" type="radio" name="radiodecode" checked>
+                                <label for="codifica" class="codifica">Codificar</label>
+                            </div>
+                            <div class="codecode">
+                                <input id="decodifica"type="radio" name="radiodecode">
+                                <label for="decodifica" class="decodifica">Decodificar</label>
+                            </div>
+                            <button class="botaoGo" type="submit" onclick="codeDecode(); aceitaNumero()">Converter</button>
+                        </div>
+                        <textarea name=""  id="inputSaida" class="inputs" maxlength="250" placeholder="resultado" disabled></textarea>                        
+                    </div>
+                </form>
+            </main>
+            <footer>2022 &copy; Lipe</footer>
+        </div>
+    <script src="maldicao.js"></script>
+</body>
+</html>
